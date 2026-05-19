@@ -1,4 +1,4 @@
-import pool from '../config/db.js';
+import pool from '../config/db.js'; 
 
 class FilmesService {
   // Função assíncrona para buscar todos os filmes (READ do CRUD)

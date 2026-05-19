@@ -1,6 +1,7 @@
-import express from 'express';
+import express from 'express'; // Corrigido (você tinha colocado Router por engano na linha 1)
 import dotenv from 'dotenv';
-import filmesRouter from '../routes/filmes.route.js';
+import filmesRouter from './routes/filmes.route.js'; // Mudou para um ponto só (.)
+
 
 // Carrega as variáveis de ambiente antes de tudo
 dotenv.config();
@@ -18,5 +19,5 @@ app.get('/', (req, res) => {
 });
 
 app.listen(PORT, () => {
-  console.log(`🚀 Servidor rodando em http://localhost:${PORT}`);
+  console.log(`🚀 Servidor rodando em http://localhost:${PORT}/filmes`);
 });
